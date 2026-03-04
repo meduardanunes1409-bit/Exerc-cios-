@@ -1,0 +1,39 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Variáveis iniciais
+        int ano = 2026;
+        double precoProduto = 1.99;
+        char sexo = 'F';
+        string nome = "Elias";
+        bool ligado = true;
+
+        // Saídas no console
+        Console.WriteLine(ano);
+        Console.WriteLine(precoProduto);
+        Console.WriteLine(sexo);
+        Console.WriteLine(nome);
+        Console.WriteLine(ligado);
+
+        Console.WriteLine("Olá " + nome);
+
+        // Operações simples
+        int x = 3;
+        int y = 2;
+        Console.WriteLine(x + y);
+
+        // Entrada do nome de usuário (com o ; corrigido)
+        Console.WriteLine("Digite o nome de usuário:");
+        string userName = Console.ReadLine();
+
+        // Entrada do ano de nascimento
+        Console.WriteLine("Digite seu ano de nascimento:");
+        int nascimentoUsuario = Convert.ToInt32(Console.ReadLine());
+
+        // Saída final usando Interpolação de String (mais limpo e moderno)
+        Console.WriteLine($" Olá {userName} a sua idade é {ano - nascimentoUsuario}");
+    }
+}
